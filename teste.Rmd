@@ -1,0 +1,15 @@
+---
+title: "teste"
+author: "Vinícius Flausino"
+date: "15/05/2020"
+output: html_document
+---
+```{r}
+library("tidyverse")
+library("nycflights13")
+
+flights %>% ggplot() + 
+  geom_density(aes(dep_delay)) +
+  xlim(0, 100)
+```
+
